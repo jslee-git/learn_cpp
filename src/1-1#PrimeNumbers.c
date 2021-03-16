@@ -96,7 +96,7 @@ void populate_array(int input, int *primes)
             if (fac == 2)
                 break;
         }
-        primes = realloc(primes, number_of_primes * sizeof(int));
+        
         //if prime number, add to array tmp
         if (fac < 2) {
             primes[number_of_primes] = i;
@@ -104,5 +104,6 @@ void populate_array(int input, int *primes)
             continue;
         }
     }
+    primes = realloc(primes, number_of_primes * sizeof(int));
     
 }
