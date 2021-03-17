@@ -1,11 +1,10 @@
-//  C++ 과제3 - C++ 기본 출력
+//
 //  2-3#SieveOfErasthenes.cpp
 //
-//  20203336
+//
 //  Created by Jisang lee on 17.03.21.
 //  
-//  소수를 출력하는데 더 효과적인 방법이 없을까 해서 인터넷을 찾아 Sieve Of Eratosthenes의 알고리즘을
-//  학습하며 프로그램에 적용했다.
+//  
 
 #include <iostream>
 #include <cstdlib>
