@@ -1,13 +1,15 @@
 //
-//  2-4#SentenceSwap.c
+//  2-4#SentenceSwap.cpp
 //  
 //
-//  Created by Jisang lee on 13.03.21.
+//  Created by Jisang lee on 17.03.21.
 //
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include <iostream>
+#include <cstring>
+#include <cstdlib>
+
+using namespace std;
 
 
 int main()
@@ -15,21 +17,22 @@ int main()
     int i;
     
     //get 5 sentences
-    printf("Enter 5 sentences (MAX 49 Characters):\n\n");
+    cout << "Enter 5 sentences (MAX 49 Characters):\n\n";
     char sentence[5][51];
     for (i = 0; i < 5; i++)
-        fgets(sentence[i], 50, stdin);
+        cin.getline(sentence[i], 50);
     
     //check and swap
     int ch;
-    printf("\n");
+    cout << "\n";
     for (i = 0; i < 5; i++) {
         for (ch = 0; ch < strlen(sentence[i]); ch ++) {
             if (sentence[i][ch] == 'a')
-                printf("%c", 'A');
+                cout << 'A';
             else
-                printf("%c", sentence[i][ch]);
+                cout << sentence[i][ch];
         }
+        cout << endl;
     }
     return 0;
 }
